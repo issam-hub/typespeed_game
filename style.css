@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Red Hat Mono", monospace;
+}
+
+.game {
+    background-color: #b2e2fc;
+    height: 100vh;
+}
+.game .title {
+    background-color: #4361a2;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    box-shadow: inset 0px -3px 20px 4px #3c5282;
+}
+.game .container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > form {
+    width: max(300px, 25%);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form > label {
+    font-weight: bold;
+}
+form input[value="Easy"] {
+    accent-color: rgb(52, 168, 17);
+}
+
+form input[value="Normal"] {
+    accent-color: rgb(35, 134, 247);
+    outline: none;
+}
+form input[value="Hard"] {
+    accent-color: red;
+}
+
+.ps {
+    padding: 15px;
+    background-color: #249daad0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.ps p > span:first-child {
+    font-weight: bold;
+    -webkit-text-stroke: 0.7px rgb(0, 0, 0);
+}
+
+.ps p > span:nth-child(2) {
+    font-weight: bold;
+    color: black;
+}
+
+.start {
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #177e89;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.inp {
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+.inp:focus {
+    outline: none;
+}
+.inp,
+.words,
+.counterNscore {
+    padding: 20px;
+    width: max(350px, 50%);
+    border: none;
+}
+
+.ps + span {
+    font-size: 3rem;
+    color: #436fce;
+    font-weight: bold;
+}
+
+.words {
+    background-color: #70cad1;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-inline: 50px;
+}
+
+.words span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* @keyframes anime {
+    0% {
+
+    }
+} */
+
+.counterNscore {
+    background-color: #8ee3f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 618px) {
+    .counterNscore {
+        flex-direction: column;
+        height: 200px;
+    }
+}
+
+.stat {
+    display: none;
+    color: #436fce;
+}
+
+.counterNscore > *:not(span) {
+    font-weight: bold;
+}
+.counterNscore span {
+    color: red;
+}
