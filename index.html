@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>typespeed</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    </head>
+    <body>
+        <div class="game">
+            <div class="title">Typespeed game</div>
+            <div class="container">
+                <form action="">
+                    <input
+                        type="radio"
+                        name="level"
+                        id=""
+                        value="Easy"
+                        data-color="rgb(52, 168, 17)"
+                    />
+                    <label for="Easy">Easy</label>
+                    <input
+                        type="radio"
+                        name="level"
+                        id=""
+                        value="Normal"
+                        data-color="rgb(35, 134, 247)"
+                    />
+                    <label for="Normal">Normal</label>
+                    <input
+                        type="radio"
+                        name="level"
+                        id=""
+                        value="Hard"
+                        data-color="red"
+                    />
+                    <label for="Hard">Hard</label>
+                </form>
+                <div class="ps">
+                    <p>
+                        You Are Playing On <span></span> Level & You Have
+                        <span></span> Seconds To Type The Word
+                    </p>
+                </div>
+                <button class="start" disabled>Start Playing</button>
+                <input type="text" class="inp" disabled />
+                <div class="words">Words Will Show Here</div>
+                <div class="counterNscore">
+                    <p>Time left: <span></span></p>
+                    <p>Score: <span></span> from <span></span></p>
+                </div>
+                <h1 class="stat">Win !</h1>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
