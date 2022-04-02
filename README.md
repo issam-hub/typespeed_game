@@ -7,7 +7,7 @@ typespeed game using of course .... nothing ! purely vanilla like always
 the idea and the bet of the design came from this video of the wonderfull ossama elzero [typespeed game](https://www.youtube.com/watch?v=rZcBHcmStJM&list=PLDoPjvoNmBAycCXz5d9WvqlmykUIys5e8)
 
 ## live model
-[live demo]()
+[live demo](https://issam-hub.github.io/typespeed_game/)
 
 ## what i learned
 well this time i learned a lot , this was one of the hardest project i've ever worked on . and for the first time ever i started carring about the quality of the code and applying the clean code concepts and DRY principle and stuff like that
